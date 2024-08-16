@@ -1,0 +1,75 @@
+name   姓名；
+sex   性别；
+bloodType   血型；
+birthday   生日；
+nation   民族；
+height   身高（cm）；
+weight   体重（kg）；
+nativePlace  籍贯；
+maritalStatus    婚姻状态（0.已婚；1.未婚；2.其他）；
+politicsStatus   政治面貌；
+religion  宗教信仰；
+constellation  星座；
+school  毕业学校；
+degrees  学历；
+soecialty  专业；
+idCard  身份证号（必填）；
+tel  手机号；
+phone  家庭电话；
+idCardAddress  身份证地址；
+nowAddress  现居住地址；
+ifDispute      是否和前单位有纠纷（0.否；1.是）；
+ifDisputeRemark  纠纷备注说明；
+ifFire      是否因工作或品行被解雇（0.否；1.是）；
+ifFireRemark  解雇备注说明；
+ifCrime     是否有犯罪记录（0.否；1.是）；
+ifCrimeRemark  犯罪备注说明；
+ifNoSalary     是否接受新人三天离职无薪（0.否；1.是）；
+ifSingleDayWeekend     是否接受单休（0.否；1.是）；
+ifWorkOvertime       是否接受加班（0.否；1.是）；
+workStatus      目前工作状态（0.离职；1.在职；2.其它）；
+ifDrive      是否会驾驶（0.否；1.是）；
+certificate     入职能提供的证明（1.身份证；2.毕业证；3.学位证；4.驾照；5.资格证；6.离职证明；7.其他）；
+salary  试用期薪资要求；
+workingHours   到岗时间；
+employeeFamilyInformationFormList    员工家庭信息集合；
+employeeWorkExperienceFormList    员工工作信息集合；
+employeeEducationAndTrainingSituationTables   员工教育培训情况集合；
+
+
+
+其中最下面的三个是集合数据，在员工家庭信息集合中：
+staffId  员工id；
+staffName  员工姓名；
+familyRelationships  家庭关系；
+name  姓名；
+age  年龄；
+tel 电话；
+occupation  职业；
+address  详细地址；
+
+在员工工作信息集合中：
+staffId  员工id；
+staffName  员工姓名；
+workTime  工作时间；
+workUnitName 工作单位名称；
+salary  薪资；
+supervisorName  主管姓名；
+supervisorTel  主管手机号；
+resignationTimeAndReason  离职时间和原因；
+
+
+在员工教育培训情况集合中：
+staffId  员工id；
+staffName  员工姓名；
+shcool       学校、机构名称；
+degrees  学历；
+graduationDate    毕业日期（可以传一个时间戳）；
+certName  证书名称;
+
+
+查询员工应聘登记信息接口，是post类型，以form-data格式传参（需要改成json格式也行）
+
+新增员工应聘登记信息接口，也是post类型的，以json格式传参，其中需要传递的所有字段在上面都做了说明
+
+
